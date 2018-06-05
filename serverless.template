@@ -1,0 +1,77 @@
+{
+  "Description": "Serverless app by pt4 iss cloud computing",
+  "Resources": {
+    "GetUser": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.GetUser",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+    
+     "PostUser": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.PostUser",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+    
+     "GetPicture": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.GetPicture",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+    
+     "PostPicture": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.PostPicture",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+
+     "GetFeed": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.GetFeed",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+    
+     "PutUser": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.PutUser",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+
+    "PutPicture": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.PutPicture",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    },
+    
+    "SearchFriends": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "pt4.iss.nus.cloudapp.function.SearchFriends",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/cloudapp-1.0.0.jar"
+      }
+    }
+    
+  }
+}
